@@ -94,6 +94,9 @@ main ul{
   align-content: space-between;
 }
 main ul li{
+  background: url(./img/beef-bulgogi-torta.gif) no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 10px;
   margin: 0px 5px;
   padding: 0px 100px;
