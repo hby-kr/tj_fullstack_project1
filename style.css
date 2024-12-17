@@ -97,17 +97,17 @@ main ul li{
   background: url(./img/beef-bulgogi-torta.gif) no-repeat;
   background-position: center;
   background-size: cover;
+  filter: blur(0px);
   border-radius: 10px;
   margin: 0px 5px;
   padding: 0px 100px;
   height: 600px;
   text-align: center;
-  backdrop-filter: blur(0px);
   border: 1px solid #000;
   transition: all .2s ease-in-out;
 }
 main ul li:hover{
-  backdrop-filter: blur(10px);
+  filter: blur(5px);
 }
 main ul li a{
   color: #000;
