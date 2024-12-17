@@ -1,0 +1,211 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+}
+button{
+  background-color: rgb(19, 43, 255);
+  color: white;
+}
+button:hover{
+  background-color: rgb(0, 0, 150);
+}
+h1{
+  position: absolute;
+  top: 12px;
+}
+nav{
+  width: 100%;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+nav ul li button{
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+main{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+main #slideshow{
+  position: relative;
+  width: 100%;
+  height: 720px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid black;
+}
+main #slideshow .slide-wrapper{
+  width: calc(100%*3);
+  height: 100%;
+  display: flex;
+  position: sticky;
+  transition: all .2s;
+}
+main #slideshow .slide-wrapper .slide{
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  position: relative;
+}
+main #slideshow .slide-wrapper .slide img{
+  max-width: 600px;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+main #slideshow .btn-wrapper{
+  width: 100%;
+  position: absolute;
+  align-items: center;
+  top: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+main #slideshow .btn-wrapper .slide-button{
+  background-color: #000000e1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  z-index: 100;
+  margin: 0px 10px;
+}
+main #slideshow .btn-wrapper .slide-button:hover{
+  background-color: #000000fd;
+  cursor: pointer;
+}
+main ul{
+  margin: 100px;
+  display: flex;
+  position: static;
+  align-content: space-between;
+}
+main ul li{
+  border-radius: 10px;
+  padding: 0px 100px;
+  height: 600px;
+  text-align: center;
+  background-color: rgb(19, 43, 255);
+  border: 1px solid white;
+  transition: all .2s ease-in-out;
+}
+main ul li:hover{
+  background-color: rgb(0, 0, 150);
+}
+main ul li a{
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #modal-container{
+  display: none;
+  z-index: 300;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: #07070757;
+  justify-content: center;
+  opacity: 0;
+  transition: all .2s;
+}
+main #modal-container.show{
+  opacity: 1;
+  display: flex;
+}
+main #modal-container .modal{
+  position: relative;
+  margin-top: 50px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  border-radius: 15px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 10px #000000a1;
+}
+main #modal-container .modal .close-btn{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px 15px;
+  background-color: inherit;
+  color: gray;
+  cursor: pointer;
+  border-radius: 15px;
+}
+main #modal-container .modal form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+main #modal-container .modal form input{
+  text-align: center;
+  background-color: #ffffff4d;
+  border: 1px solid rgb(212, 212, 212);
+  margin: 2px 0px;
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+}
+main #modal-container .modal form button{
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+footer{
+  display: flex;
+  padding: 50px;
+  bottom: 0px;
+  border-top: 1px solid #000;
+  color: #000;
+}
+footer address{
+  margin: 0px 10px;
+  
+}
+footer ul{
+  display: flex;
+  padding: 10px 10px;
+}
+footer ul li{
+  text-align: center;
+  padding: 0px 5px;
+  margin: 0px 5px;
+}
+footer address{
+  color: #000;
+}
+@media (max-width: 1200px) {
+  main ul li{
+    padding: 0px 50px;
+  }
+}
+@media (max-width: 640px) {
+  main ul li{
+    padding: 0px 20px;
+    height: 500px;
+  }
+}

@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>MAIN</title>
-</head>
-
-<body>
-
-
-
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./app.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <h1>로고</h1>
+        </li>
+        <li>
+          <button>로그인</button>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div id="slideshow">
+        <div class="slide-wrapper">
+          <div class="slide">
+            <img src="./img/neapolitan-ice-cream-sandwich.gif" alt="slide-img1" class="slide-img" />
+          </div>
+          <div class="slide">
+            <img src="./img/beef-bulgogi-torta.gif" alt="slide-img2" class="slide-img" />
+          </div>
+          <div class="slide">
+            <img src="./img/bub-and-pops-italian-hoagie.gif" alt="slide-img3" class="slide-img" />
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <button id="prev" class="slide-button">이전</button>
+          <button id="next" class="slide-button">다음</button>
+        </div>
+      </div>
+      <div id="main-list">
+        <ul>
+          <li><a href="">박물관</a></li>
+          <li><a href="">미술관</a></li>
+          <li><a href="">극장</a></li>
+          <li><a href="">페스티벌</a></li>
+          <li><a href="">팝업스토어</a></li>
+        </ul>
+      </div>
+      <div id="modal-container" class="show">
+        <div class="modal">
+          <button class="close-btn">X</button>
+          <form action="">
+            <legend>
+              <input type="text" placeholder="아이디를 입력해 주세요.">
+              <input type="text" placeholder="비밀번호를 입력해 주세요.">
+              <button type="submit">보내기</button>
+            </legend>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="">링크</a></li>
+        <li><a href="">링크</a></li>
+        <li><a href="">링크</a></li>
+        <li><a href="">링크</a></li>
+      </ul>
+      <address>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ex
+        quidem quibusdam atque, molestiae fuga dolore eius quisquam modi
+        voluptatem assumenda. Suscipit architecto doloremque omnis veniam
+        corporis adipisci cum commodi?
+      </address>
+    </footer>
+  </body>
 </html>
